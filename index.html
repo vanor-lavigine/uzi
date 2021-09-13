@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        .border {
+          
+         
+          
+            width: 450px;
+            height: 480px;
+            margin:0px;
+
+        }
+
+        .boardone {
+            width: 450px;
+            height: 30px;
+
+            display: flex;
+            background-color: #daca39;
+            border: 1px solid white;
+        }
+
+        .cube {
+            width: 30px;
+            height: 100%;
+            border: 1px solid white;
+        }
+
+       
+
+
+        .chessman-black {
+            position: absolute;
+
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .chessman-white {
+            position: absolute;
+
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .BTN{
+            position: absolute;
+            left:500px;
+            top:0px;
+            width:80px;
+            height:20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="border">
+        <div class="boardone">
+
+            <div class="cube" ></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+        <div class="boardone">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+
+        </div>
+    </div>
+   <button type = "button" class = "BTN">重新开始 </button>
+    <script>
+
+
+
+
+        // 画一颗新的棋子
+        /*function draw(type, left, top) {
+
+            var dom = document.createElement('div');
+            document.body.appendChild(dom);
+            dom.className = type === 'white' ? 'chessman-white' : 'chessman-black';
+
+            dom.style.top = top;
+            dom.style.left = left;
+            return dom;
+
+            // create a new dom
+            // append this dom to container
+            // set dom style(black\white) ----className
+            // set dom positon
+            // return this dom
+        }//
+        draw('white', '321px', '322px')
+        draw('black', '321px', '30px')
+        draw('white', '421px', '151px')
+        draw('black', '421px', '292px')
+        draw('white', '151px', '182px')
+        draw('white', '91px', '62px')
+
+        /*
+        let div = document.createElement("div");
+        document.body.appendChild(div);
+        div.className = "chesswhite";
+        let new_element = document.createElement("div");
+        document.body.appendChild(new_element);
+        new_element.className = "chessblack";
+        */
+
+        /*unction number(){
+        
+        }
+        
+        
+        const chess = document.getElementsByClassName("chesswhite")
+        chess.addEventListener('click',function(event){
+            function drawchess(num,event.clientX,event.clientY){
+            var dom = document.createElement('div');
+                    document.body.appendChild(dom);
+                   
+        
+                    dom.style.top = event.clientX;
+                    dom.style.left = event.clientY;
+                    return dom;
+        } 
+        });*/
+        var flag = true; //true 白棋
+        var isWin = false;//true 结束
+        let inum = 0;
+
+
+        //用数组来存储下过的棋子位置 1 为白 2 为黑 0 代表没有下
+        var arr = new Array(15);
+        for (var i = 0; i < 15; i++) {
+            arr[i] = new Array(15);
+            for (var j = 0; j < 15; j++) {
+                arr[i][j] = 0;
+            }
+        }
+
+
+
+        function drawchess(num, x, y) {
+            x0 = x * 30 ;
+            y0 = y * 32 ;
+            if (num == 1) {
+
+                draw('white', x0, y0);
+                arr[x][y] = 1;
+              
+                
+            } else if (num == 2) {
+
+                draw('black', x0, y0);
+                arr[x][y] = 2;
+                
+            }
+            
+            result (num,x,y);
+        }
+
+
+
+        const bod = document.querySelector(".border");//to do 
+
+
+
+
+        function draw(type, left, top) {
+
+            var dom = document.createElement('div');
+            document.body.appendChild(dom);
+            dom.className = type === 'white' ? 'chessman-white' : 'chessman-black';
+
+            dom.style.top = top + "px";
+            dom.style.left = left + "px";
+            //console.log(top,left);
+            return dom;
+
+        }
+
+
+
+        bod.addEventListener("click", function (event) {
+
+            const x = event.clientX / 30;
+            const y = event.clientY / 30;
+            x0 = parseInt(x,10);
+            y0 = parseInt(y,10);
+            console.log(x0,y0);
+            /* if (isWin) {
+                alert("游戏已经结束，请刷新重新开始！");
+                return 0;
+            }*/
+            if (x0 <= 0 || x0 >= 15 || y0 <= 0 || y0 >= 15) {
+                return;
+            } 
+            //cosole.log(arr[x0]；
+            if (arr[x0][y0] != 0) {
+               
+                alert("你不能在这个位置下棋");
+                return;
+            }
+           
+
+            if (flag) {
+                flag = false;
+                drawchess(1, x0, y0);
+                inum++;
+
+            } else {
+                flag = true;
+                drawchess(2, x0, y0);
+                 inum++;
+            }
+console.log(inum);
+        });
+
+        //判断输赢
+
+
+        function result(num, x, y) {
+            var n1 = 0;//左右方向
+            var n2 = 0;//上下方向
+            var n3 = 0;//从左上到右下
+            var n4 = 0;//从右上到左下
+
+            //**********左右方向***********
+            for (var i = x; i >= 0; i--) {
+                if (arr[i][y] != num) {
+                    break;
+                }
+                n1++;
+            }
+            for (var i = x+1; i < 15; i++) {
+                if (arr[i][y] != num) {
+                    break;
+                }
+                n1++;
+            }
+
+            //************上下方向**********
+            for (var i = y; i >= 0; i--) {
+                if (arr[x][i] != num) {
+                    break;
+                }
+                n2++;
+            }
+            for (var i = y+1; i < 15; i++) {
+                if (arr[x][i] != num) {
+                    break;
+                }
+                n2++;
+            }
+
+            //************左上到右下**********
+            for (var i = x, j = y; i >= 0, j >= 0; i--, j--) {
+                if (arr[i][j] != num) {
+                    break;
+                }
+                n3++;
+            }
+
+            for (var i = x+1, j = y+1; i < 15, j < 15; i++, j++) {
+                if (arr[i][j] != num) {
+                    break;
+                }
+                n4++;
+            }
+            //****************右上到左下*************
+            for (var i = x, j = y; i < 15, j >= 0;i--,j++){
+                if(arr[i][j] != num){
+                    break;
+                }
+                n4++;
+            }
+            for(var i = x+1, j = y+1;i >= 0, j < 15;i++,j--){
+                if(arr[i][j] != num){
+                    break;
+                }
+                n4++;
+            }
+
+
+
+            if(n1 >= 5||n2 >= 5||n3 >= 5||n4 >= 5){
+                if(num == 1){
+                    alert("白棋赢了");
+                }
+                if(num == 2){
+                    alert("黑棋赢了");
+                }
+                isWin = true;
+
+            }
+
+
+
+
+}
+const  btn = document.querySelector(".BTN");
+
+
+
+btn.addEventListener("click", function(event){
+    for(let a = 0; a <inum; a++){
+    const chessmanwhite = document.querySelector(".chessman-white",",");//找到要删除的子节点
+const parentwhite = chessmanwhite.parentElement;//拿到要删除子节点的父节点
+const removedwhite = parentwhite.removeChild(chessmanwhite);
+removedwhite === chessmanwhite;
+
+
+    const chessmanblack = document.querySelector(".chessman-black");//找到要删除的子节点
+    const parentblack = chessmanblack.parentElement;//拿到要删除子节点的父节点
+    const removedblack = parentblack.removeChild(chessmanblack);
+removedblack === chessmanblack;
+    }
+ 
+} )
+
+
+
+
+    </script>
+
+</body>
+
+</html>

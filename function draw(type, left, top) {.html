@@ -1,0 +1,22 @@
+function draw(type, left, top) {
+
+    var dom = document.createElement('div');
+    document.body.appendChild(dom);
+    dom.className = type === 'white' ? 'chessman-white' : 'chessman-black';
+
+    dom.style.top = top;
+    dom.style.left = left;
+    return dom;
+
+    // create a new dom
+    // append this dom to container
+    // set dom style(black\white) ----className
+    // set dom positon
+    // return this dom
+}
+draw('white', '321px', '322px')
+draw('black', '321px', '30px')
+draw('white', '421px', '151px')
+draw('black', '421px', '292px')
+draw('white', '151px', '182px')
+draw('white', '91px', '62px')
