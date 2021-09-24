@@ -110,6 +110,17 @@
       buttoncontain.className = 'buttoncontainer';
 
 
+ const container = document.createElement("div");
+        document.body.appendChild(container);
+        container.className = 'container';
+
+
+    const chessmancontain = document.createElement("div");
+        document.body.appendChild(chessmancontain);
+        chessmancontain.className = 'chessmancontainer';
+
+
+
 //**************按钮重新开始    ****************
         const btnRestart = document.createElement("button");
         buttoncontain.appendChild(btnRestart);
@@ -122,21 +133,17 @@
         btnBack.textContent = "悔棋";
 //*************************************************************
 
-        const container = document.createElement("div");
-        document.body.appendChild(container);
-        container.className = 'container';
+       
         //console.log(containerone);
 
-        const chessmancontain = document.createElement("div");
-        document.body.appendChild(chessmancontain);
-        chessmancontain.className = 'chessmancontainer';
+    
 
 
           //用数组来存储下过的棋子位置 1 为白 2 为黑 0 代表没有下
-          var arr = new Array(15);
-        for (var i = 0; i < 15; i++) {
-            arr[i] = new Array(15);
-            for (var j = 0; j < 15; j++) {
+          var arr = new Array(linenum);
+        for (var i = 0; i < linenum; i++) {
+            arr[i] = new Array(linenum);
+            for (var j = 0; j < linenum; j++) {
                 arr[i][j] = 0;
             }
         }
@@ -312,13 +319,45 @@
  
 
         btnRestart.addEventListener("click", function (event) {
+             const Re = chessmancontain.querySelectorAll("div.chessman-white","div.chessman-black");
+             Re.remove();
+             for (var i = 0; i < linenum; i++) {
+                  for (var j = 0; j < linenum; j++) {
+                arr[i][j] = 0;
+            }
+        }
+
+          })
+          
+     //删除最后子节点函数
+ 
 
 
-           
-            chessmancontain.innerHTML = "";
-        })
+
         
+        btnBack.addEventListener("click",function(event){
+        for(const i = 0 ; i < linenum ; i++){
+            for(const j = 0 ;j < linenum ; j++){
+                if(arr[i][j] == 0){
+                    alert("无法执行");
+                }
+                else if(arr[i][j] == 1){
+                    const Re = chessmancontain.lastChild;
+                    Re.remove();
+                    arr[Re.event.clientX][Re.event.clientY] = 0;
 
+                }else{    
+                    const Re = chessmancontain.lastChild;
+                    Re.remove();
+                    arr[Re.event.clientX][Re.event.clientY] = 0;
+
+                }
+            }
+
+        }
+            
+            
+        })
     </script>
 </body>
 
